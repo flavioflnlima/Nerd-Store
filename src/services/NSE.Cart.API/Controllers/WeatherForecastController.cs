@@ -10,7 +10,6 @@ namespace NSE.Cart.API.Controllers
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
-    {
-        
+    {        
     }
 }
