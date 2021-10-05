@@ -5,6 +5,7 @@ using static NSE.Identity.API.Models.UserViewModels;
 
 namespace NSE.Identity.API.Controllers
 {
+    [ApiController]
     [Route("api/identidade")]
     public class AuthController : Controller
     {
@@ -16,6 +17,7 @@ namespace NSE.Identity.API.Controllers
             _signInManager = signInManager;
             _userManager = userManager;
         }
+
         [HttpPost("nova-conta")]
         public async Task<ActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
